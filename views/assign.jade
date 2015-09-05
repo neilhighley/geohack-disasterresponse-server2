@@ -19,6 +19,10 @@ block content
          ul(class="helper-list")
             each helpr in helpers_matched
                li(onclick="usehelper(#{helpr.id})")
+                 img(src="/images/pusher_logo.png",height="60px",style="float:left")
                  div(class="helper-name") #{helpr.name}
                  div(class="helper-desc") #{helpr.description}
-                 div(class="helper-loc") #{helpr.location}
+                 div(class="helper-loc")
+                     div
+                       img(src="/images/what3words_pin-red.png", height="25px")
+                       a(href="/location/#{helpr.location}") #{helpr.location}

@@ -36,6 +36,11 @@ var tasks_available=[
 ]
 function usehelper(id){
     alert("Help manually requested");
-  alert("Waiting for confirmation from "+helpers[id].name)
+    alert("Waiting for confirmation from "+helpers[id].name)
+    document.location.href="/";
+}
+
+function usetask(id){
+    alert("Task selected:"+tasks_available[id].name);
     document.location.href="/";
 }
