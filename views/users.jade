@@ -6,6 +6,9 @@ block content
          li
             div(class="helper-name") #{helpr.name}
             div(class="helper-desc") #{helpr.description}
+             ul(class="helper-skills")
+                 each skl in helpr.skills
+                     li #{skl}
             div(class="helper-loc")
                 div
                     img(src="/images/what3words_pin-red.png", height="25px")
