@@ -1,0 +1,9 @@
+extends layout
+block content
+
+   ul(class="helper-list")
+      each helpr in helpers_available
+         li
+            div(class="helper-name") #{helpr.name}
+            div(class="helper-desc") #{helpr.description}
+            div(class="helper-loc") #{helpr.location}

@@ -6,3 +6,38 @@ body {
 a {
   color: #00B7FF;
 }
+.helper-list{
+  list-style: none;
+}
+.helper-list li{
+  margin-bottom:5px;
+  padding:4px;
+  border:1px solid #888;
+}
+.helper-list li:hover{
+  background-color:yellow;
+}
+.helper-name{
+font-size:1.3em;
+
+}
+.helper-desc{
+
+}
+.helper-loc{
+
+  color:blue;
+}
+
+ul.task-list{
+  list-style:none;
+
+}
+.task-list>li{
+  float:left;
+  padding:3px;
+  margin:5px;
+  width:40%;
+  border:1px solid #333;
+  background-color:#FFD;
+}

@@ -1,0 +1,24 @@
+//
+   Created by neilhighley on 05/09/2015.
+extends layout
+block content
+   h1 Assign a task to a helper
+
+   div(class="container-fluid")
+      div The task is&nbsp;
+         strong #{task_selected.name}
+         br
+         span Location = #{task_selected.location}
+      div These skills are required for this task:
+         ul
+            each tsk in task_selected.skills_required
+              li= tsk
+      br
+      br
+      div The helpers who have at least one of these skills are:
+         ul(class="helper-list")
+            each helpr in helpers_matched
+               li(onclick="usehelper(#{helpr.id})")
+                 div(class="helper-name") #{helpr.name}
+                 div(class="helper-desc") #{helpr.description}
+                 div(class="helper-loc") #{helpr.location}
