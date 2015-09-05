@@ -5,18 +5,18 @@ var helpers=[{id:1,
   name:"Neeil",
   description:"local hero",
   location:"dog.cat.fish",
-  skills:["boat","strength","swimming"]},
+  skillset:["boat","strength","swimming"]},
   {id:2,
     name:"Carlos",
     description:"local superhero",
     location:"shoe.feet.cheese",
-    skills:["swordfighting","farming","firstaid"]
+    skillset:["swordfighting","farming","firstaid"]
    },
   {id:3,
     name:"Martin",
     description:"elusive protector",
     location:"shield.sword.sparrow",
-    skills:["welding","carpentry","strength","driver"]}
+    skillset:["welding","carpentry","strength","driver"]}
     ];
 
 var tasks_available=[
@@ -28,13 +28,13 @@ var tasks_available=[
     accepted_by:[]},
   { id:2,
     name:"We need towels at the relief center",
-    skills_required:["Boat","swimmer"],
+    skills_required:["near-store","drive","boat"],
     location:"good.green.girl",
     accepted:true,
     accepted_by:"Neil"},
   { id:3,
     name:"Doctor required for triage at the relief center",
-    skills_required:["Boat","swimmer"],
+    skills_required:["firstaid","driver"],
     accepted:false,
   location:"good.green.girl"},
 ]

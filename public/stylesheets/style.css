@@ -46,3 +46,9 @@ ul.task-list{
   width:100%;
   padding:5px;
 }
+ul.helper-skills li{
+  border:0px;
+  margin-left:5px;
+  float:left;
+  list-style:none;
+}

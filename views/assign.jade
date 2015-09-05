@@ -22,11 +22,12 @@ block content
                  img(src="/images/pusher_logo.png",height="60px",style="float:left")
                  div(class="helper-name") #{helpr.name}
                  div(class="helper-desc") #{helpr.description}
-                 ul(class="helper-skills")
-                  each skl in helpr.skills
-                    li #{skl}
+                   ul(class="helper-skills")
+                     each skl in helpr.skillset
+                       li= skl
+                 br(clear="both")
                  div(class="helper-loc")
                      div
                        img(src="/images/what3words_pin-red.png", height="25px")
-                       a(href="/location/#{helpr.location}") #{helpr.location}
+                       a(href="http://w3w.co/#{helpr.location}", target="_blank") #{helpr.location}
 
