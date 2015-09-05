@@ -5,11 +5,14 @@ block content
    h1= title
    ul(class="task-list")
       each tsk in tasks
-         li
+         li(onclick="usetask(#{tsk.id})")
             div
+               img(src="/images/pusher_logo.png",height="30px")
                strong #{tsk.name}
                br
-               span Location = #{tsk.location}
+               div
+                   img(src="/images/what3words_pin-red.png", height="25px")
+                   a(href="/location/#{tsk.location}")  #{tsk.location}
             div These skills are required for this task:
               ul
                  each tskskill in tsk.skills_required
